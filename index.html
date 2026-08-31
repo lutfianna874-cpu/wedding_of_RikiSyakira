@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riki & Syakira | Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- =====================================================
+     OPENING
+===================================================== -->
+<div id="opening">
+    <div class="opening-glow glow-1"></div>
+    <div class="opening-glow glow-2"></div>
+    <div class="floating-opening">♡</div>
+    <div class="floating-opening">✦</div>
+    <div class="floating-opening">❀</div>
+    <div class="floating-opening">♡</div>
+    <div class="opening-content">
+        <div class="mini-flower">❀</div>
+        <p class="opening-small">
+            THE WEDDING OF
+        </p>
+        <h1>
+            Riki <span>&</span> Syakira
+        </h1>
+        <div class="opening-line"></div>
+        <p class="opening-date">
+            04 • 05 • 2030
+        </p>
+        <p class="guest-text">
+            Kepada Yth.<br>
+            Bapak/Ibu/Saudara/i
+        </p>
+        <button class="open-btn" onclick="openInvitation()">
+            <span>💌</span>
+            Buka Undangan
+        </button>
+    </div>
+</div>
+<!-- =====================================================
+     MUSIK
+===================================================== -->
+<audio id="music" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+<button
+    class="music-button"
+    id="musicButton"
+    onclick="toggleMusic()">
+    🎵
+</button>
+<!-- =====================================================
+     ORNAMEN GLOBAL
+===================================================== -->
+<div class="floating-elements">
+    <span>♡</span>
+    <span>✦</span>
+    <span>❀</span>
+    <span>♡</span>
+    <span>✧</span>
+    <span>❁</span>
+    <span>♡</span>
+    <span>✦</span>
+</div>
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="flower flower-1">❀</div>
+    <div class="flower flower-2">❁</div>
+    <div class="flower flower-3">✿</div>
+    <div class="flower flower-4">❀</div>
+    <div class="sparkle sparkle-1">✦</div>
+    <div class="sparkle sparkle-2">✧</div>
+    <div class="sparkle sparkle-3">✦</div>
+    <div class="hero-content">
+        <p class="hero-small">
+            THE WEDDING CELEBRATION
+        </p>
+        <h1>Riki</h1>
+        <div class="hero-and">&</div>
+        <h1>Syakira</h1>
+        <div class="hero-divider">
+            ❀ ───────── ♡ ───────── ❀
+        </div>
+        <p class="hero-date">
+            04 MEI 2030
+        </p>
+    </div>
+    <div class="scroll-down">
+        SCROLL
+        <span>↓</span>
+    </div>
+</section>
+<!-- =====================================================
+     QUOTE
+===================================================== -->
+<section class="quote-section reveal">
+    <div class="corner-decoration top-left">❀</div>
+    <div class="corner-decoration bottom-right">❁</div>
+    <div class="section-title">
+        <span>WITH LOVE</span>
+        <h2>
+            Assalamu'alaikum
+        </h2>
+        <p>
+            Dengan memohon rahmat dan ridho Allah SWT,
+            kami bermaksud mengundang Bapak/Ibu/Saudara/i
+            untuk hadir di hari bahagia kami.
+        </p>
+    </div>
+    <div class="quote-card">
+        <div class="quote-symbol">
+            ❝
+        </div>
+        <p>
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah
+            Dia menciptakan untukmu pasangan hidup dari
+            jenismu sendiri, supaya kamu mendapatkan
+            ketenangan hati dan dijadikan-Nya kasih sayang
+            di antara kamu."
+        </p>
+        <strong>
+            QS. Ar-Rum : 21
+        </strong>
+        <div class="quote-bottom">
+            ♡
+        </div>
+    </div>
+</section>
+<!-- =====================================================
+     MEMPELAI
+===================================================== -->
+<section class="couple reveal">
+    <div class="background-flower">❀</div>
+    <div class="background-flower flower-right">❁</div>
+    <div class="section-title">
+        <span>THE BRIDE & GROOM</span>
+        <h2>
+            Mempelai
+        </h2>
+    </div>
+    <div class="couple-card">
+        <div class="photo-frame">
+            <div class="frame-corner tl">❀</div>
+            <div class="frame-corner tr">✦</div>
+            <div class="frame-corner bl">✧</div>
+            <div class="frame-corner br">❀</div>
+            <img
+                src="foto-pengantin.jpg"
+                alt="Riki dan Syakira">
+        </div>
+        <div class="couple-name">
+            Riki <span>&</span> Syakira
+        </div>
+        <p class="couple-description">
+            Dua hati yang dahulu dipertemukan oleh
+            sebuah kebetulan sederhana, kini memilih
+            untuk berjalan bersama dalam satu perjalanan
+            kehidupan.
+        </p>
+        <div class="love-symbol">
+            ♡
+        </div>
+    </div>
+</section>
+<!-- =====================================================
+     LOVE STORY
+===================================================== -->
+<section class="story-section reveal">
+    <div class="story-background-circle circle-a"></div>
+    <div class="story-background-circle circle-b"></div>
+    <div class="section-title">
+        <span>OUR LOVE STORY</span>
+        <h2>
+            Awal Pertemuan
+        </h2>
+        <p>
+            Karena setiap kisah cinta memiliki awal,
+            dan kisah kami dimulai dari sebuah
+            pertemuan sederhana.
+        </p>
+    </div>
+    <div class="story-frame">
+        <div class="story-frame-top">
+            ✦ &nbsp; ♡ &nbsp; ❀ &nbsp; ♡ &nbsp; ✦
+        </div>
+        <div class="story-date">
+            <span>♡</span>
+            AWAL CERITA
+            <span>♡</span>
+        </div>
+        <h3>
+            Ketika Takdir Mempertemukan
+        </h3>
+        <div class="story-divider">
+            ❀ ───── ♡ ───── ❀
+        </div>
+        <div class="story-text">
+            <p>
+                Tidak pernah terbayangkan sebelumnya,
+                bahwa sebuah momen sederhana di bangku
+                SMP akan menjadi awal dari perjalanan
+                panjang dua hati.
+            </p>
+            <p>
+                Saat itu, <strong>Syakira</strong> adalah seorang
+                adik kelas, sedangkan <strong>Riki</strong> merupakan
+                kakak kelasnya.
+            </p>
+            <p>
+                Suatu hari, ketika sekolah mengadakan
+                ulangan, mereka berada di dalam ruangan
+                yang sama.
+            </p>
+            <p>
+                Di antara suasana ulangan yang tenang,
+                tanpa sebuah rencana dan tanpa pernah
+                mereka bayangkan sebelumnya, Riki dan
+                Syakira duduk berdua.
+            </p>
+            <p class="story-romantic">
+                Mungkin bagi orang lain itu hanyalah
+                sebuah kebetulan kecil.
+                <br><br>
+                Namun bagi takdir, mungkin itulah
+                awal dari sebuah cerita yang telah
+                dipersiapkan dengan begitu indah.
+            </p>
+            <div class="story-highlight">
+                <div>
+                    <span>♡</span>
+                    Satu ruangan
+                </div>
+                <div>
+                    <span>♡</span>
+                    Satu bangku
+                </div>
+                <div>
+                    <span>♡</span>
+                    Satu pertemuan
+                </div>
+            </div>
+            <p class="story-ending">
+                Dan tanpa mereka sadari,
+                pertemuan sederhana itu menjadi
+                halaman pertama dari kisah yang
+                suatu hari membawa mereka menuju
+                sebuah janji untuk selamanya.
+            </p>
+        </div>
+        <div class="story-frame-bottom">
+            ❀ &nbsp; ♡ &nbsp; ✧ &nbsp; ♡ &nbsp; ❀
+        </div>
+    </div>
+</section>
+<!-- =====================================================
+     COUNTDOWN
+===================================================== -->
+<section class="countdown-section reveal">
+    <div class="countdown-overlay"></div>
+    <div class="section-title">
+        <span>SAVE THE DATE</span>
+        <h2>
+            Menuju Hari Bahagia
+        </h2>
+        <p>
+            Sebuah hari yang telah kami nantikan.
+        </p>
+    </div>
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days">00</span>
+            <small>HARI</small>
+        </div>
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>JAM</small>
+        </div>
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>MENIT</small>
+        </div>
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>DETIK</small>
+        </div>
+    </div>
+    <div class="countdown-flower">
+        ❀
+    </div>
+</section>
+<!-- =====================================================
+     RANGKAIAN ACARA
+===================================================== -->
+<section class="events-section reveal">
+    <div class="event-floating e1">♡</div>
+    <div class="event-floating e2">❀</div>
+    <div class="event-floating e3">✦</div>
+    <div class="section-title">
+        <span>WEDDING DAY</span>
+        <h2>
+            Rangkaian Acara
+        </h2>
+        <p>
+            Dengan penuh kebahagiaan, kami mengundang
+            Bapak/Ibu/Saudara/i untuk hadir dan
+            menjadi bagian dari hari istimewa kami.
+        </p>
+    </div>
+    <div class="events-wrapper">
+        <!-- AKAD -->
+        <div class="event-item">
+            <div class="event-number">
+                01
+            </div>
+            <div class="event-icon">
+                💍
+            </div>
+            <div class="event-content">
+                <span class="event-label">
+                    SACRED MOMENT
+                </span>
+                <h3>
+                    Akad Nikah
+                </h3>
+                <div class="event-line"></div>
+                <p class="event-date">
+                    Sabtu, 04 Mei 2030
+                </p>
+                <p>
+                    🕘 <strong>09.00 WIB – Selesai</strong>
+                </p>
+                <p>
+                    📍 Kediaman Mempelai Wanita
+                </p>
+                <p class="event-desc">
+                    Prosesi sakral yang menjadi awal
+                    dari perjalanan Riki dan Syakira
+                    sebagai sepasang suami istri.
+                </p>
+            </div>
+            <div class="event-side-decoration">
+                ❀
+            </div>
+        </div>
+        <!-- RESEPSI -->
+        <div class="event-item">
+            <div class="event-number">
+                02
+            </div>
+            <div class="event-icon">
+                🥂
+            </div>
+            <div class="event-content">
+                <span class="event-label">
+                    CELEBRATION
+                </span>
+                <h3>
+                    Resepsi Pernikahan
+                </h3>
+                <div class="event-line"></div>
+                <p class="event-date">
+                    Sabtu, 04 Mei 2030
+                </p>
+                <p>
+                    🕚 <strong>11.00 WIB – 15.00 WIB</strong>
+                </p>
+                <p>
+                    📍 Kediaman Mempelai Wanita
+                </p>
+                <p class="event-desc">
+                    Mari bersama-sama merayakan
+                    kebahagiaan dan berbagi doa serta
+                    kasih untuk Riki & Syakira.
+                </p>
+            </div>
+            <div class="event-side-decoration">
+                ❁
+            </div>
+        </div>
+    </div>
+    <div class="event-bottom">
+        ♡ &nbsp; Dengan cinta, kami menantikan kehadiranmu &nbsp; ♡
+    </div>
+</section>
+<!-- =====================================================
+     LOKASI
+===================================================== -->
+<section class="location-section reveal">
+    <div class="section-title">
+        <span>WEDDING VENUE</span>
+        <h2>
+            Lokasi Acara
+        </h2>
+    </div>
+    <div class="location-card">
+        <div class="map-icon">
+            📍
+        </div>
+        <div class="location-decoration">
+            ❀
+        </div>
+        <h3>
+            Kediaman Mempelai
+        </h3>
+        <p>
+            Silakan gunakan tombol di bawah
+            untuk melihat lokasi acara.
+        </p>
+        <a
+            href="https://maps.google.com/?q=1.147668,109.081177"
+            target="_blank"
+            class="map-button">
+            📍 Buka Google Maps
+        </a>
+    </div>
+</section>
+<!-- =====================================================
+     RSVP
+===================================================== -->
+<section class="rsvp-section reveal">
+    <div class="section-title">
+        <span>YOUR WISHES</span>
+        <h2>
+            Ucapan & Doa
+        </h2>
+        <p>
+            Tinggalkan ucapan dan doa terbaik
+            untuk kedua mempelai.
+        </p>
+    </div>
+    <div class="rsvp-box">
+        <div class="input-decoration">
+            ♡
+        </div>
+        <input
+            type="text"
+            id="guestName"
+            placeholder="Nama Anda">
+        <select id="attendance">
+            <option value="">
+                Konfirmasi Kehadiran
+            </option>
+            <option value="Hadir">
+                💙 Saya akan hadir
+            </option>
+            <option value="Tidak Hadir">
+                🤍 Maaf, saya tidak dapat hadir
+            </option>
+        </select>
+        <textarea
+            id="message"
+            placeholder="Tuliskan ucapan & doa untuk Riki dan Syakira..."></textarea>
+        <button
+            class="send-button"
+            onclick="sendRSVP()">
+            💌 Kirim Ucapan
+        </button>
+    </div>
+</section>
+<!-- =====================================================
+     CLOSING
+===================================================== -->
+<section class="closing-section reveal">
+    <div class="closing-decoration cd1">
+        ❀
+    </div>
+    <div class="closing-decoration cd2">
+        ❁
+    </div>
+    <div class="closing-content">
+        <span>
+            TERIMA KASIH
+        </span>
+        <h2>
+            Riki & Syakira
+        </h2>
+        <p>
+            Merupakan suatu kebahagiaan bagi kami
+            apabila Bapak/Ibu/Saudara/i berkenan
+            hadir dan memberikan doa restu.
+        </p>
+        <div class="closing-heart">
+            ♡
+        </div>
+        <small>
+            04 • 05 • 2030
+        </small>
+    </div>
+</section>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+    <h2>
+        Riki & Syakira
+    </h2>
+    <p>
+        Forever begins here. ♡
+    </p>
+    <div class="footer-decoration">
+        ❀ ─── ✦ ─── ❀
+    </div>
+    <small>
+        © 2030 Wedding Invitation
+    </small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
